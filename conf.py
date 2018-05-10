@@ -45,10 +45,10 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Red Pitaya FPGA Examples'
-title = u'Red Pitaya FPGA Examples Documentation'
-copyright = u'2017, Red Pitaya d.d.'
-author = u'Red Pitaya'
+project = u'Red Pitaya FPGA Examples Test'
+title = u'Red Pitaya FPGA Examples Documentation Test'
+copyright = u'2017, Red Pitaya d.d. Test'
+author = u'Red Pitaya Test'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -203,7 +203,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'RedPitayadoc'
+htmlhelp_basename = 'RedPitayadocTest'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -259,7 +259,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'RedPitaya-STEMlab', title, author, 1)
+    (master_doc, 'RedPitaya-STEMlab Test', title, author, 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -272,7 +272,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'RedPitaya-STEMlab', title, author, 'RedPitaya', 'One line description of project.',
+    (master_doc, 'RedPitaya-STEMlabTest', title, author, 'RedPitayaTest', 'One line description of project.',
      'Miscellaneous'),
 ]
 
