@@ -1,4 +1,4 @@
-#########################
+﻿#########################
 Red Pitaya FPGA Examples
 #########################
 
@@ -18,6 +18,7 @@ such as radar, radio systems, vector-network-analyzer, etc.
     :maxdepth: 1                                                                                                                      
     :numbered: 
 
+    tutor1.rst
     setup.rst
     simple.rst
     advanced.rst
