@@ -38,3 +38,21 @@ Multiplications and divisions in this base by two are simple. If you multiply by
 :math:`(1*2^3+0*2^2+1*2^1+1*2^0 + 1*2^{-1})*2 = 1*2^4+0*2^3+1*2^2+1*2^1 + 1*2^0 =` 10111\ :sub:`2`\  = 23\ :sub:`10`\
 
 :math:`(1*2^3+0*2^2+1*2^1+1*2^0 + 1*2^{-1})/2 = 1*2^2+0*2^1+1*2^0+1*2^{-1} + 1*2^{-2} =`101.11\ :sub:`2`\  = 5.75\ :sub:`10`\
+
+Octal base 
+----------
+
+0, 1, 2, 3, 4, 5, 6 and 7 forms the octal base. To represent this base in an electrical system we would have eight different voltage levels. A number greater than seven and smaller than one need more than one algorism to be represented. For example 11.5\ :sub:`10`\  in octal base is represented as 13.4\ :sub:`8`\ ,
+
+:math:`1*2^3+0*2^2+1*2^1+1*2^0 + 1*2^{-1} + 0*2^{-2} + 0*2^{-3} =1*8^1 + (2+1)*8^0 + 4*8^{-1} = 1*8^1+3*8^0+4*8^{-1} =` 13.4\ :sub:`8`\  = 11.5\ :sub:`10`\
+
+As 8 is :math:`2^3` you can group the algorisms in a number written in a binary base to form a number in a octal base.
+
+Hexadecimal base
+----------------
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E and F forms the hexadecimal base. To represent this base in an electrical system we would have sixteen different voltage levels. A number greater than sixteen and smaller than one need more than one algorism to be represented. For example 11.5\ :sub:`10`\  in the hexadecimal base is represented as B.8\ :sub:`16`\ ,
+
+:math:`1*2^3+0*2^2+1*2^1+1*2^0 + 1*2^{-1} + 0*2^{-2}+0*2^{-3} + 0*2^{-4} = 11*16^0 + 8*16^{-1} = `B.8\ :sub:`16`\ = 11.5\ :sub:`10`\
+
+In this case 11 quantities represent the letter B. As 16 is :math:`2^4` you can group the algorisms in a number written in a binary base to form a number in a octal base.
