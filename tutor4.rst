@@ -83,8 +83,12 @@ a	c = NOT a
 
 NOT Gate
 
-.. image:: https://github.com/victorhkr/FPGA_examples_TEST/blob/master/not_gate.png
+.. figure:: https://raw.githubusercontent.com/victorhkr/FPGA_examples_TEST/master/not_gate.png
+    :height: 100px
+    :width: 200 px
+    :align: left
 
+    sadasdasdasdasd
 
 Laws of Boolean algebra
 =======================
@@ -92,24 +96,23 @@ Laws of Boolean algebra
 The next laws offers tools to work with Boolean algebra, and many are seen in the normal algebra. These laws can simplify problems, digital circuits only doing the algebraic operations. This list of laws defines the Boolean algebra. They are described with the variables a, b and c and the Boolean operations.
 
 - Associativity of +:                    a + (b + c) = (a + b) + c
-- Associativity of X:                  a X (b X c) = (a X b) X c
-- Commutativity of +:                a + b = b + a
-- Commutativity of X:                a X b = b X a
-- Distributivity of X over +:       a X (b + c) = (a X b) + (a X c)
-- Identity for +:                           a + 0 = a
-- Identity for X:                           a X 1 = a
+- Associativity of X:                    a X (b X c) = (a X b) X c
+- Commutativity of +:                    a + b = b + a
+- Commutativity of X:                    a X b = b X a
+- Distributivity of X over +:            a X (b + c) = (a X b) + (a X c)
+- Identity for +:                        a + 0 = a
+- Identity for X:                        a X 1 = a
 - Annihilator for X:                     a X 0 = 0 
 - Annihilator for +:                     a + 1 = 1 
-- Idempotence of +:                   a + a = a
-- Idempotence of X:                   a X a = a
-- Absorption 1:                           a X (a + b) = a
-- Absorption 2:                           a + (a X b) = a
-- Distributivity of + over X:        a + (b X c) = (a + b) X (a + c)           
-- Complementation 1:               a X !a = 0
-- Complementation 2:               a + !a = 1      
-- Double negation:                     !(!a) = a
+- Idempotence of +:                      a + a = a
+- Idempotence of X:                      a X a = a
+- Absorption 1:                          a X (a + b) = a
+- Absorption 2:                          a + (a X b) = a
+- Distributivity of + over X:            a + (b X c) = (a + b) X (a + c)           
+- Complementation 1:                     a X !a = 0
+- Complementation 2:                     a + !a = 1      
+- Double negation:                       !(!a) = a
 - De Morgan 1:                           !a X !b = !(a + b)
 - De Morgan 2:                           !a + !b = !(a X b)
 
 From these laws you can note that there is a duality principle. If you change the operation + to X, or X to +, and 0 to 1, or vice versa the dual law can be obtained. 
-
