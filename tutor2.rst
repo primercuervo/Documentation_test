@@ -86,4 +86,5 @@ Negative numbers
 To represent a negative number in any base you only need to add the “-“ symbol in front of the number, but how to store it in a memory? As we store numbers in a binary base we could add one bit in the number, one element of memory, to say if it is negative or positive. The bit 0 represent the positive signal and the bit 1 the negative signal. For example:
 
 +11.5\ :sub:`10`\ = +1011.1\ :sub:`2`\ = 01011.1\ :sub:`2`\
+
 -11.5\ :sub:`10`\ = -1011.1\ :sub:`2`\ = 11011.1\ :sub:`2`\
