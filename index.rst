@@ -11,14 +11,17 @@ most of all, the programmable logic or
 FPGA Red Pitaya could be used for high performance computing, state-of-the-art measurement system, signal processing 
 and much more. Having both linux-based processing system and programmable logic Red Pitaya is an ideal board for 
 introduction to the FPGA programming and ultimately for building powerful professional and non-professional projects
-such as radar, radio systems, vector-network-analyzer, etc.
-
+such as radar, radio systems, vector-network-analyzer, etc
 
 .. toctree::                                                                                                                          
     :maxdepth: 1                                                                                                                      
     :numbered: 
 
     tutor1.rst
+    tutor2.rst
+    tutor3.rst
+    tutor4.rst
+    tutor5.rst
     setup.rst
     simple.rst
     advanced.rst
