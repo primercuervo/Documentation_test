@@ -1,6 +1,6 @@
-﻿#########################
-Basics of Digital Systems
-#########################
+﻿###################################################################
+Basics of Digital Systems - Digital Information and Numerical Bases
+###################################################################
 
 ***************************************
 Digital Information and Numerical Bases
