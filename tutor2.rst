@@ -56,3 +56,34 @@ Hexadecimal base
 :math:`1*2^3+0*2^2+1*2^1+1*2^0 + 1*2^{-1} + 0*2^{-2}+0*2^{-3} + 0*2^{-4} = 11*16^0 + 8*16^{-1} = `B.8\ :sub:`16`\ = 11.5\ :sub:`10`\
 
 In this case 11 quantities represent the letter B. As 16 is :math:`2^4` you can group the algorisms in a number written in a binary base to form a number in a octal base.
+
+Numbers in different bases
+
+==============  =============  ==============  =============== 
+Number base 10	Number base 2	Number base 8	Number base 16
+==============  =============  ==============  ===============
+0	        0000	       0               0
+1	        0001	       1	       1
+2	        0010	       2	       2
+3	        0011	       3	       3
+4	        0100	       4	       4
+5	        0101	       5	       5
+6	        0110	       6	       6
+7	        0111	       7	       7
+8	        1000	       10	       8
+9	        1001	       11	       9
+10	        1010	       12              A
+11	        1011	       13	       B
+12	        1100	       14	       C
+13	        1101	       15	       D
+14	        1110	       16	       E
+15	        1111	       17	       F
+==============  =============  ==============  ===============
+
+Negative numbers
+----------------
+
+To represent a negative number in any base you only need to add the “-“ symbol in front of the number, but how to store it in a memory? As we store numbers in a binary base we could add one bit in the number, one element of memory, to say if it is negative or positive. The bit 0 represent the positive signal and the bit 1 the negative signal. For example:
+
++11.5\ :sub:`10`\ = +1011.1\ :sub:`2`\ = 01011.1\ :sub:`2`\
+-11.5\ :sub:`10`\ = -1011.1\ :sub:`2`\ = 11011.1\ :sub:`2`\
