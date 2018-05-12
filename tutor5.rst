@@ -96,4 +96,3 @@ a  b  c  !f(a,b,c)	Terms     f(a,b,c) Terms of the ∏
 Operating the terms we get the basic form that is f = a X b + c. 
 
 The conclusion is that there are two ways to retrieve the canonical form of a function, which are the sum of the terms or its dual that is the product of the terms.
- FPGA is the versatility that it has for tests and for learning.
