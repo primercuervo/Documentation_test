@@ -46,7 +46,7 @@ a	b	c = a AND b
 
 AND Gate
 
-.. image:: https://raw.githubusercontent.com/victorhkr/FPGA_examples_TEST/master/and_gate.png
+.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/and_gate.png
     :height: 100px
     :width: 200 px
     :align: left
@@ -75,7 +75,7 @@ a	b	c = a OR b
 
 OR Gate
 
-.. image:: https://raw.githubusercontent.com/victorhkr/FPGA_examples_TEST/master/or_gate.png
+.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/or_gate.png
     :height: 100px
     :width: 200 px
     :align: left
@@ -101,7 +101,7 @@ a	c = NOT a
 
 NOT Gate
 
-.. image:: https://raw.githubusercontent.com/victorhkr/FPGA_examples_TEST/master/not_gate.png
+.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/not_gate.png
     :height: 100px
     :width: 200 px
     :align: left
