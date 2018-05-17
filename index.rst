@@ -22,6 +22,7 @@ such as radar, radio systems, vector-network-analyzer, etc
     tutor3.rst
     tutor4.rst
     tutor5.rst
+    tutor6.rst
     setup.rst
     simple.rst
     advanced.rst
@@ -31,7 +32,9 @@ such as radar, radio systems, vector-network-analyzer, etc
     tutor2.rst
     tutor3.rst
     tutor4.rst
-    tutor5.rstsetup.rst
+    tutor5.rst
+    tutor6.rst
+    setup.rst
     basic.rst
     simple.rst
     advanced.rst
