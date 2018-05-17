@@ -6,7 +6,7 @@ Installation of Vivado
 Install Vivado
 **************
 
-Download **Vivado HLx 2017.2: WebPACK and Editions - Linux Self Extracting Web Installer**. If you don't have an Xilinx account you will have to create one, it's free. 
+Download `Vivado HLx 2017.2: WebPACK and Editions - Linux Self Extracting Web Installer <Vivado HLx 2017.2: WebPACK and Editions - Linux Self Extracting Web Installer>`_ . If you don't have an Xilinx account you will have to create one, it's free. 
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-45-53.png
     :height: 400px
@@ -244,7 +244,7 @@ Check the information and click Install. Now wait for the download and Installat
 |
 |
 
-It will open the license manager, and you will have to get the free WebPACK license file. Click **Connect Now** or **Save Link As**. This will open the Xilinx license manager site and you have to follow instructions to generate the **ISE WebPACK license** and you will receive the license file on your registered e-mail. After that click in **Load License** and click **Copy License** to copy your **.lic** file to register Vivado.
+It will open the license manager, and you will have to get the free WebPACK license file. Click **Connect Now** or **Save Link As**. This will open the Xilinx license manager site and you have to follow instructions to generate the **ISE WebPACK license**. You will receive the license file on your registered e-mail. After that click in **Load License** and click **Copy License** to copy your **.lic** file to register Vivado.
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-16-33.png
     :height: 400px
