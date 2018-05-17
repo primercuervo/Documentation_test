@@ -2,6 +2,8 @@
 Installation of Vivado
 ######################
 
+This installation tutorial is intended for who want to use the FPGA of the Red Pitaya board. You will need to install the OS Ubuntu or the OS Linux Mint on your computer or on a virtual machine. After that follow the instructions to install Vivado.
+
 **************
 Install Vivado
 **************
