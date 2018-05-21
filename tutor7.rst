@@ -27,7 +27,11 @@ Go to the `Red Pitaya GitHub <https://github.com/RedPitaya/RedPitaya>`_ site, an
 |
 |
 
-Open a Terminal and input the following commands. You will enter the fpga folder and make a Vivado project.
+*******************
+Make a FPGA project
+*******************
+
+Go to the downloaded ZIP location and extract it. You will enter the fpga folder and make a Vivado project. Open a Terminal and input the following commands.
 
 .. code-block:: bash
 
