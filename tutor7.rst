@@ -29,15 +29,13 @@ Go to the `Red Pitaya GitHub <https://github.com/RedPitaya/RedPitaya>`_ site, an
 
 Open a Terminal and input the following commands. You will enter the fpga folder and make a Vivado project.
 
-cd Downloads/
+.. code-block:: bash
 
-cd RedPitaya-master/
-
-cd fpga/
-
-. /opt/Xilinx/Vivado/2017.2/settings64.sh
-
-make project PRJ=v0.94
+    cd Downloads/
+    cd RedPitaya-master/
+    cd fpga/
+    . /opt/Xilinx/Vivado/2017.2/settings64.sh
+    make project PRJ=v0.94
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/comandoslinux.png
     :height: 400px
