@@ -28,7 +28,7 @@ f = (!a X b) + (a X !b) + (a X b)
 =b X (!a X a) + a X (!b + b) = b + a 
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughOR.png
-    :scale: 10 %
+    :scale: 5 %
 
 Grouping the terms in red give: !a X b + a X b = b
 Grouping the terms in green give: a X !b + a X b = a
@@ -55,7 +55,7 @@ a	b	c	f(a,b,c)
 Karnaugh map
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughfunction.png
-    :scale: 10 %
+    :scale: 5 %
 
 !a X b X c is repeated twice.
 
@@ -91,7 +91,7 @@ a	b	c	d	f(a,b,c,d)
 Karnaugh map
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughfunction4var.png
-    :scale: 10 %
+    :scale: 5 %
 
 Grouping the terms in green give: !a X b X !d
 
