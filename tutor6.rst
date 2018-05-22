@@ -1,18 +1,35 @@
-﻿######################
-Installation of Vivado
-######################
+﻿####################
+Karnaugh map
+####################
 
-This installation tutorial is intended for who want to use the FPGA of the Red Pitaya board. You will need to install the OS Ubuntu or the OS Linux Mint on your computer or on a virtual machine. After that follow the instructions to install Vivado.
+************
+Karnaugh map
+************
 
-**************
-Install Vivado
-**************
+This is a graphical method to simplify Boolean functions. It consists in grouping the terms of a truth table and to simplify it to use the fewer terms as possible. Let’s start with the OR function.
 
-Download `Vivado HLx 2017.2: WebPACK and Editions - Linux Self Extracting Web Installer <Vivado HLx 2017.2: WebPACK and Editions - Linux Self Extracting Web Installer>`_ . If you don't have an Xilinx account you will have to create one, it's free. 
+f(a,b) = a + b 
 
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-45-53.png
-    :height: 400px
-    :width: 500 px
+Truth table
+
+===     ===     ==========
+a	b	f = a OR b
+===     ===     ==========
+0	0	0
+0	1	1
+1	0	1
+1	1	1
+===     ===     ==========
+
+f = (!a X b) + (a X !b) + (a X b)     
+
+---   repeating (a X b) because of a + a = a
+
+=b X (!a X a) + a X (!b + b) = b + a 
+
+.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughOR.png
+    :height: 200px
+    :width: 300 px
     :align: left
 
 |
@@ -24,25 +41,34 @@ Download `Vivado HLx 2017.2: WebPACK and Editions - Linux Self Extracting Web In
 |
 |
 |
-|
-|
-|
-|
-|
-|
-|
-|
-|
 
-Now you have to run the downloaded file for installation. Open a terminal, go to the downloaded file directory (cd Downloads/) and insert the following commands. The first command is to make the file executable and the second to run the file.
+Grouping the terms in red give: !a X b + a X b = b
+Grouping the terms in green give: a X !b + a X b = a
 
-chmod +x Xilinx_Vivado_SDK_2017.2_0616_1_Lin64.bin 
+The result is f = a + b .
 
-sudo ./Xilinx_Vivado_SDK_2017.2_0616_1_Lin64.bin 
+The terms must be grouped in numbers multiple of two and the objective is the simplification of the function. The bigger the group better is the simplification. All ones must be in one group and it is better to not repeat terms. Let’s do the example of the function f(a,b,c) = (a X b) + c
 
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-49-38.png
-    :height: 400px
-    :width: 500 px
+Truth table of the function
+
+===     ===     ===     ========
+a	b	c	f(a,b,c)
+===     ===     ===     ========
+0	0	0	0
+0	0	1	1
+0	1	0	0
+0	1	1	1
+1	0	0	0
+1	0	1	1
+1	1	0	1
+1	1	1	1
+===     ===     ===     ========
+
+Karnaugh map
+
+.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughfunction.png
+    :height: 200px
+    :width: 300 px
     :align: left
 
 |
@@ -54,21 +80,43 @@ sudo ./Xilinx_Vivado_SDK_2017.2_0616_1_Lin64.bin
 |
 |
 |
-|
-|
-|
-|
-|
-|
-|
-|
-|
 
-It will open this installation wizard. Click Next.
+!a X b X c is repeated twice.
 
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-52-12.png
-    :height: 400px
-    :width: 500 px
+Grouping the terms in green give: a X b X c + a X b X !c = a X b
+
+Grouping the terms in red give: !a X !b X c + !a X b X c + a X !b X c + a X b X c  = c 
+
+The result is f = (a X b) + c .
+
+The next truth table represents a function with four input variables. The Karnaugh map will be a 4x4 square with 16 terms.
+
+===     ===     ===     ===     ==========
+a	b	c	d	f(a,b,c,d)
+===     ===     ===     ===     ==========
+0	0	0	0	0
+0	0	0	1	0
+0	0	1	0	0
+0	0	1	1	0
+0	1	0	0	1
+0	1	0	1	0
+0	1	1	0	1
+0	1	1	1	0
+1	0	0	0	0
+1	0	0	1	1
+1	0	1	0	1
+1	0	1	1	1
+1	1	0	0	0
+1	1	0	1	1
+1	1	1	0	1
+1	1	1	1	1
+===     ===     ===     ===     ==========
+ 
+Karnaugh map
+
+.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughfunction4var.png
+    :height: 200px
+    :width: 300 px
     :align: left
 
 |
@@ -80,175 +128,11 @@ It will open this installation wizard. Click Next.
 |
 |
 |
-|
-|
-|
-|
-|
-|
-|
-|
-|
 
-Insert your Xilinx ID and password. Check **Download and install Now**. Click Next.
+Grouping the terms in green give: !a X b X !d
 
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-52-18.png
-    :height: 400px
-    :width: 500 px
-    :align: left
+Grouping the terms in red give: a X d 
 
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
+Grouping the terms in red give: a X c
 
-Check all the boxes. Click Next.
-
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-52-24.png
-    :height: 400px
-    :width: 500 px
-    :align: left
-
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-
-Check **Vivado HL WebPACK**. Click Next.
-
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-52-33.png
-    :height: 400px
-    :width: 500 px
-    :align: left
-
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-
-Check all the boxes in the next image. Uncheck Ultrascale and Ultrascale+ you don't need them. Click Next.
-
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-54-02.png
-    :height: 400px
-    :width: 500 px
-    :align: left
-
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-
-The default installation directory is **/opt/Xilinx**, so install there. Click Next.
-
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-53-07.png
-    :height: 400px
-    :width: 500 px
-    :align: left
-
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-
-Check the information and click Install. Now wait for the download and Installation.
-
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-54-13.png
-    :height: 400px
-    :width: 500 px
-    :align: left
-
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-
-It will open the license manager, and you will have to get the free WebPACK license file. Click **Connect Now** or **Save Link As**. This will open the Xilinx license manager site and you have to follow instructions to generate the **ISE WebPACK license**. You will receive the license file on your registered e-mail. After that click in **Load License** and click **Copy License** to copy your **.lic** file to register Vivado.
-
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Screenshot%20from%202018-05-16%2010-16-33.png
-    :height: 400px
-    :width: 500 px
-    :align: left
+The result is f = (!a X b X !d) + (a X d) + (a X c)

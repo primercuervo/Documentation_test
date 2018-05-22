@@ -13,7 +13,7 @@ A Boolean function is a function that has n variables or entries, so it has 2n p
 
 Digital circuit of f(a,b,c)
 
-.. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/function.png
+.. image:: https://raw.githubusercontent.com/victorhkr/FPGA_examples_TEST/master/function.png
     :height: 200px
     :width: 400 px
     :align: left
