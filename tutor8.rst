@@ -1,4 +1,4 @@
-﻿####################
+####################
 Programming the FPGA
 ####################
 
@@ -21,15 +21,23 @@ a	b	f = a OR b
 1	1	1
 ===     ===     ==========
 
+The function in canonical form is:
+
 f = (!a X b) + (a X !b) + (a X b)     
 
 ---   repeating (a X b) because of a + a = a
 
-=b X (!a X a) + a X (!b + b) = b + a 
+f = (!a X b) + (a X !b) + (a X b) + (a X b)   
+
+=b X (!a + a) + a X (!b + b) = b + a
+
+The Karnaugh map is formed with the terms of the truth table:
+
+Karnaugh map
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughOR.png
     :height: 200px
-    :width: 300 px
+    :width: 200 px
     :align: left
 
 |
@@ -47,7 +55,7 @@ Grouping the terms in green give: a X !b + a X b = a
 
 The result is f = a + b .
 
-The terms must be grouped in numbers multiple of two and the objective is the simplification of the function. The bigger the group better is the simplification. All ones must be in one group and it is better to not repeat terms. Let’s do the example of the function f(a,b,c) = (a X b) + c
+The terms must be grouped in multiples of power of two (2,4,8,16,...) and the objective is the simplification of the function. The bigger the group better is the simplification. All ones must be in one group and it is better to not repeat terms. If it is possible to make a group, the simplification will be better. Let’s do the example of the function f(a,b,c) = (a X b) + c
 
 Truth table of the function
 
@@ -68,7 +76,7 @@ Karnaugh map
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughfunction.png
     :height: 200px
-    :width: 300 px
+    :width: 250 px
     :align: left
 
 |
@@ -111,14 +119,19 @@ a	b	c	d	f(a,b,c,d)
 1	1	1	0	1
 1	1	1	1	1
 ===     ===     ===     ===     ==========
- 
+
 Karnaugh map
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughfunction4var.png
-    :height: 200px
+    :height: 300px
     :width: 300 px
     :align: left
 
+|
+|
+|
+|
+|
 |
 |
 |
