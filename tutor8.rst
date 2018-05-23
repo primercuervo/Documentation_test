@@ -144,8 +144,8 @@ Karnaugh map
 
 Grouping the terms in green give: !a X b X !d
 
-Grouping the terms in red give: a X d 
+Grouping the terms in red give: a X d
 
-Grouping the terms in red give: a X c
+Grouping the terms in blue give: a X c
 
 The result is f = (!a X b X !d) + (a X d) + (a X c)
