@@ -55,7 +55,7 @@ Grouping the terms in green give: a X !b + a X b = a
 
 The result is f = a + b .
 
-The terms must be grouped in multiples of power of two (2,4,8,16,...) and the objective is the simplification of the function. The bigger the group better is the simplification. All ones must be in one group and it is better to not repeat terms. If it is possible to make a group, the simplification will be better. Let’s do the example of the function f(a,b,c) = (a X b) + c
+The terms must be grouped in multiples of power of two (2,4,8,16,...) and the objective is the simplification of the function. The bigger the group better is the simplification. All ones should be in one group and it is better to not repeat terms. If it is possible to make a group, the simplification will be better. Let’s do the example of the function f(a,b,c) = (a X b) + c
 
 Truth table of the function
 
