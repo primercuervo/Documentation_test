@@ -32,7 +32,7 @@ Reg declarations can be **reg** , **integer**, **time** and **realtime**. A vari
 Data input output rules
 =======================
 
-If you have a variable of type net, it can be declared as **input**, **output**, or **inout**. A variable of type register can only be declared of type **output**.
+If you have a variable of type net, it can be declared as **input**, **output**, or **inout**. A variable of type **reg** can only be declared of type **output**.
 
 Assign values
 =============
