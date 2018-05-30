@@ -1,6 +1,6 @@
-﻿#######
-Verilog 
-#######
+﻿######################
+Verilog - Introduction 
+######################
 
 Introduction
 ============
@@ -31,35 +31,3 @@ Next there is an example of a project that multiplies two inputs with 18 bits re
     assign out_f = in_a * in_b;
 
     endmodule
-
-Port Types
-==========
-
-The port types can be, **input**, **output** and **inout**.
-
-Data Types
-==========
-
-There are two types of data in Verilog, one is called **net** and the other is called **reg**.  A reg declaration is used to store some temporary data and a net is used to connect blocks and processes. 
-
-Net
----
-
-Net declarations can be **wire** , **tri**, **supply0** and **supply1**. 
-
-=======   ===============================
-wire      represents a node or connection
-tri       represents a tri-state node
-supply0   represents the logic 0
-supply1   represents the logic 1
-=======   ===============================
-
-Reg
----
-
-Reg declarations can be **reg** , **integer**, **time** and **realtime**. A variable of type reg can be designated only by a procedure statement, task, or function. A variable of type reg cannot be the output of a port or an **assign** statement.
-
-Data input output rules
-=======================
-
-If you have a variable of type net, it can be declared as **input**, **output**, or **inout**. A variable of type register can only be declared of type **output**.

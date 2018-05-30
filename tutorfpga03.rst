@@ -1,6 +1,38 @@
-﻿#######
-Verilog 
-#######
+﻿################
+Verilog - Values
+################
+
+Port Types
+==========
+
+The port types can be, **input**, **output** and **inout**.
+
+Data Types
+==========
+
+There are two types of data in Verilog, one is called **net** and the other is called **reg**.  A reg declaration is used to store some temporary data and a net is used to connect blocks and processes. 
+
+Net
+---
+
+Net declarations can be **wire** , **tri**, **supply0** and **supply1**. 
+
+=======   ===============================
+wire      represents a node or connection
+tri       represents a tri-state node
+supply0   represents the logic 0
+supply1   represents the logic 1
+=======   ===============================
+
+Reg
+---
+
+Reg declarations can be **reg** , **integer**, **time** and **realtime**. A variable of type reg can be designated only by a procedure statement, task, or function. A variable of type reg cannot be the output of a port or an **assign** statement.
+
+Data input output rules
+=======================
+
+If you have a variable of type net, it can be declared as **input**, **output**, or **inout**. A variable of type register can only be declared of type **output**.
 
 Assign values
 =============
@@ -42,48 +74,6 @@ x or X    specify unknown bits          16'h15abx
 z or z    specify high impedance value  16'hz
 ========= ============================  ===============
 
-Arithmetic operators
-====================
-
-For the FPGA, division and multiplication are very expensive and sometimes you cannot synthesize division. If you use Z or X for values the result is unknown. The operations treat the values as unsigned. If a = 5, b=10, c=2b'01 and d = 2'b0Z . 
-
-========= ============================  ==================
-Character Operation performed           Example
-\+        Add                           b + c = 11
-\-        Subtract                      b - c = 9, -b=-10
-\/        Divide                        a * b = 50
-\*        Multiply                      b / a = 2
-%         Modulus                       b % a = 0
-========= ============================  ==================
-
-Bitwise operators
-=================
-
-Each bit is operated, result is the size of the largest operand and  the smaller operand is left extended with zeroes to the size of the bigger operand. If a = 3'b101, b=3'b110 and c=3'b01X .
-
-========= ============================  ==================
-Character Operation performed           Example
-\~        Invert each bit               ~a = 3'b010
-\&        And each bit                  b & c = 3'b010
-\|        Or each bit                   a | b = 3'b111
-\^        Xor each bit                  a ^ b = 3'b011
-\^~ or ~^ Xnor each bit                 a ^~ b = 3'b100
-========= ============================  ==================
-
-Reduction operators
-===================
-
-These operators reduces the vectors to only one bit. If there are the characters z and x the result can be a known value. If a = 5'b10101, b = 4'b0011, c = 3'bz00 and d = 3'bx011 .
-
-========= ============================  ====================
-Character Operation performed           Example
-\&        And all bits                  &a = 1'b0, &d1'b0
-\~&       Nand all bits                 ~&a = 1'b1
-\|        Or all bits                   |a = 1'b1, |c = 1'bX
-\~|       Nor all bits                  ~|a= 1'b0
-^         Xor all bits                  ^a = 1'b1
-\^~ or ~^ Xnor all bits                 ~^a = 1'b0
-========= ============================  ====================
 
 References
 ==========
