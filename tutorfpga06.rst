@@ -6,7 +6,7 @@ Behavioral statements are declared inside an **always** or **initial** block. Th
 
 If-else Statements
 ==================
-It has the same format as many programming languages. It tests a condition and executes the code inside the if block and if the condition isn't met the code inside the else block is executed. Example of a multiplexer:
+It has the same format as many programming languages. It tests a condition and executes the code inside the **if** block and if the condition isn't met the code inside the **else** block is executed. Example of a multiplexer:
 
 .. code-block:: Verilog
     
@@ -31,7 +31,7 @@ Case the variable or expression is equal some value inside the case block the st
         1'bz : statement4;
     endcase
 
-There are also the forms of the case block that are **casez** and **casex**. The **casez** treats the values as don't cares and all 'z' is represented by '?' . The casex is the same but treats 'x' and 'z' as don't cares. 
+There are also the forms of the case block that are **casez** and **casex**. The **casez** treats the values as don't cares and all 'z' is represented by '?' . The casex is the same but treats 'x' and 'z' as don't cares. The **default** option is used when any other condition is met.
 
 .. code-block:: Verilog
 
@@ -48,7 +48,7 @@ There are also the forms of the case block that are **casez** and **casex**. The
 Forever and repeat loops
 ========================
 
-They are used for test and simulation and cannot be synthesized. The forever loop executes continuosly and don't stop. The loop **repeat** executes in a finite amount of time.
+They are used for test and simulation and cannot be synthesized. The **forever** loop executes continuously and don't stop. The loop **repeat** executes in a finite amount of time.
 
 forever
 -------
@@ -91,7 +91,7 @@ Executes the block if the condition is true, repeats the test and executes again
 For loop
 ========
 
-Executes the code a finite amount of time. If the condition is true it enters the block, after the end it repeats the test and executes again until the condition is not met. In the example the condition is i < 16. In the beggining the i variable is declared as zero and it increases at the end of every loop.
+Executes the code a finite amount of time. If the condition is true it enters the block, after the end it repeats the test and executes again until the condition is not met. In the example the condition is i < 16. In the beginning the i variable is declared as zero and it increases by one at the end of every loop.
 
 .. code-block:: Verilog
 
