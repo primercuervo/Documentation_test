@@ -7,7 +7,7 @@ This example will show how to build a calculator. We will use the **case** state
 Hardware required
 =================
 		
-One RedPitaya and wires.
+One redpitaya, a protoboard and wires.
 
 Steps
 =====
@@ -192,8 +192,11 @@ Now insert this code in "red_pitaya_top.sv" .
 |
 |
 
-Exp_p_dir and exp_n_dir are the direction of the expansion connector. One means it is an input and zero an output.
+Exp_p_dir and exp_n_dir are the direction of the expansion connector. One means it is an input and zero an output. The next part of the code is the instantiation of the calculator module.
 
-Finally start synthesis, implementation and write bitstream. Send the bitstream file to redpitaya and programm the FPGA. 
+Finally start synthesis, implementation and write bitstream. Send the bitstream file to redpitaya and program the FPGA. 
 
-To use the calculator connect the 3.3 V to the expansion connector inputs. Exp_p from 0 to 3 is the 4 bit input word A. Exp_p from 0 to 3 is the 4 bit input word B. The 2 bits in exp_p 7 and 6 are used to choose the function. 00 is the sum, 01 is the subtraction, 10 is the multiplication and 11 is the division. Try multiplication by two and dividing by two and you will see the leds rotate. Negative numbers are represented by two compliment.
+Usage
+=====
+
+To use the calculator connect the 3.3 V to the expansion connector inputs with wires, use a protoboard. Exp_p from 0 to 3 is the 4 bit input word A. Exp_p from 0 to 3 is the 4 bit input word B. The 2 bits in exp_p 7 and 6 are used to choose the function. 00 is the sum, 01 is the subtraction, 10 is the multiplication and 11 is the division. Try multiplication by two and dividing by two and you will see the leds rotate. Negative numbers are represented by two complement.
