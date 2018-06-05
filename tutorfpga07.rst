@@ -12,10 +12,11 @@ Tasks are subroutines that can be called anytime in the module they are defined,
 	
 .. code-block:: Verilog
     
-    module  task_calling (temp_a, temp_b, temp_c, temp_d);
+    module  task_calling (adc_a, adc_b, adc_a_conv, adc_b_conv);
     input [7:0] adc_a, adc_b;
     output [7:0] adc_a_conv, adc_b_conv;
-    reg [7:0] temp_b, temp_d;
+
+    reg [7:0] adc_a_conv, adc_b_conv;
 
     task convert;
     input [7:0] adc_in;
@@ -47,11 +48,15 @@ Functions are like tasks, with some differences. Functions cannot drive more tha
 - The variables declared within the function are local to that function. 
 - The order of declaration within the function defines how the variables passed to the function by the caller are used. 
 - Functions can take, drive, and source global variables, when no local variables are used. When local variables are used, basically output is assigned only at the end of function execution.
-- Functions can call other functions, but cannot call tasks.
+- Functions can call other functions, but cannot call tasks. Function example:
 	
 .. code-block:: Verilog
     
-    module simple_function();
+    module  function_calling(a, b, c, d, e, f);
+
+    input a, b, c, d, e ;
+    output f;
+    wire f;
    
     function  myfunction;
     input a, b, c, d;
@@ -60,10 +65,6 @@ Functions are like tasks, with some differences. Functions cannot drive more tha
     end
     endfunction
                  
-    input a, b, c, d, e ;
-    output f;
-    wire f;
-
     assign f =  (myfunction (a,b,c,d)) ? e :0;
       	 
     endmodule
