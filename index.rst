@@ -32,6 +32,7 @@ such as radar, radio systems, vector-network-analyzer, etc
     tutorfpga07.rst
     tutorfpga1.rst
     tutorfpga2.rst
+    fpgaexample01.rst
     simple.rst
     advanced.rst
 
@@ -51,6 +52,7 @@ such as radar, radio systems, vector-network-analyzer, etc
     tutorfpga07.rst
     tutorfpga1.rst
     tutorfpga2.rst
+    fpgaexample01.rst
     simple.rst
     advanced.rst
 
