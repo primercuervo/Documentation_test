@@ -45,7 +45,9 @@ Octal base
 
 :math:`1*2^3+0*2^2+1*2^1+1*2^0 + 1*2^{-1} + 0*2^{-2} + 0*2^{-3} =1*8^1 + (2+1)*8^0 + 4*8^{-1} = 1*8^1+3*8^0+4*8^{-1} =` 13.4\ :sub:`8`\  = 11.5\ :sub:`10`\
 
-As 8 is :math:`2^3` you can group the algorisms in a number written in a binary base to form a number in a octal base.
+As 8 is :math:`2^3` you can group three algorisms in a number written in a binary base to form a number in a octal base. Example: 
+
+100 001 111\ :sub:`2`\ = 417\ :sub:`8`\
 
 Hexadecimal base
 ----------------
@@ -54,9 +56,12 @@ Hexadecimal base
 
 :math:`1*2^3+0*2^2+1*2^1+1*2^0 + 1*2^{-1} + 0*2^{-2}+0*2^{-3} + 0*2^{-4} = 11*16^0 + 8*16^{-1} = `B.8\ :sub:`16`\ = 11.5\ :sub:`10`\
 
-In this case 11 quantities represent the letter B. As 16 is :math:`2^4` you can group the algorisms in a number written in a binary base to form a number in a octal base.
+In this case 11 quantities represent the letter B. As 16 is :math:`2^4` you can group four algorisms in a number written in a binary base to form a number in a hexadecimal base. Example:
+
+1000 1111\ :sub:`2`\ = 8F \ :sub:`16`\
 
 Numbers in different bases
+--------------------------
 
 ==============  =============  ==============  =============== 
 Number base 10	Number base 2	Number base 8	Number base 16
