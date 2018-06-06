@@ -58,9 +58,8 @@ Blocking
     reg d [3:0] = 4'b0000;
 
     always@(posedge clock) begin  //executes on clock
-    c = a + b;
-    d = c + a;        // in the end of the first sequence c = 
-    4'0011
+    c = a + b;        // statements in sequence
+    d = c + a;        // after the clock rising c = 4'0011
     end               // and d = 4'0100;
 
 Non-Blocking
@@ -74,9 +73,9 @@ Non-Blocking
     reg d [3:0] = 4'b0000;
 
     always@(posedge clock) begin  //executes on clock
-    c <= a + b;
-    d <= c + a;        // in the end of the first sequence c = 4'0011
-    end               // and d = 4'0001;
+    c <= a + b;        // statements in parallel
+    d <= c + a;        // after the clock rising c = 4'0011
+    end                // and d = 4'0001;
 
 References
 ==========
