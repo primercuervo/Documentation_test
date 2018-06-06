@@ -17,7 +17,7 @@ In Verilog the system is described with inputs, outputs and modules that impleme
 Verilog Example
 ===============
 
-Next there is an example of a project that multiplies two inputs with 18 bits resulting in an output with 36 bits. First is created a module named **projtest** and inside parenthesis is declared the input and output ports. The // are a comment so the line of code is invisible to the compilation. Next it is assigned to the output the mathematical multiplication of the two inputs. It is important to know the word lenghts to not occur overflow.
+Next there is an example of a project that multiplies two inputs with 18 bits resulting in an output with 36 bits. First is created a module named **projtest** and inside parenthesis is declared the input and output ports. The // are a comment so the line of code is invisible to the compilation. Next it is assigned to the output the mathematical multiplication of the two inputs. It is important to know the word lengths to not occur overflow.
 
 .. code-block:: Verilog
     
