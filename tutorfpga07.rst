@@ -2,13 +2,20 @@
 Verilog - Tasks and Functions
 #############################
 
-Tasks and functions are used to reduce code repetition. If your in your project you need to do something many times it is better to use a task or a function that will reduce code writing and it will be more readable.
+Tasks and functions are used to reduce code repetition. If in your project you need to do something many times it is better to use a task or a function that will reduce code writing and it will be more readable.
 
 Task
 ====
 	
-Tasks are subroutines that can be called anytime in the module they are defined, but it is possible to define them in a different file and include the file in the module. Task can include time delays, functions can't. Tasks can have any number of inputs and outputs, functions can have only one output. If a variable is declared within the task it is local to the task and can't be used outside the task. Tasks can drive global variables if no local variable are declared. Tasks are called with statements and cannot be used in a expression, functions can be used in a expression. Task example:
+Tasks are subroutines that can be called anytime in the module they are defined, but it is possible to define them in a different file and include the file in the module. Some charachteristics of tasks are:
 
+- Task can include time delays, functions can't. 
+- Tasks can have any number of inputs and outputs, functions can have only one output. 
+- If a variable is declared within the task it is local to the task and can't be used outside the task. 
+- Tasks can drive global variables if no local variables are declared. 
+- Tasks are called with statements and cannot be used in a expression, functions can be used in a expression. 
+
+Task example:
 	
 .. code-block:: Verilog
     
@@ -40,18 +47,18 @@ Tasks are subroutines that can be called anytime in the module they are defined,
 
 Functions
 =========
-	
+
 Functions are like tasks, with some differences. Functions cannot drive more than one output and cannot have time delays. Some differences are:
 
 - Functions cannot include timing delays, like posedge, negedge, # delay, which means that functions should be executed in "zero" time delay.
 - Functions can have any number of inputs but only one output.
-- The variables declared within the function are local to that function. 
+- The variables declared within the function are local to that function.
 - The order of declaration within the function defines how the variables passed to the function by the caller are used. 
 - Functions can take, drive, and source global variables, when no local variables are used. When local variables are used, basically output is assigned only at the end of function execution.
 - Functions can call other functions, but cannot call tasks. Function example:
-	
+
 .. code-block:: Verilog
-    
+
     module  function_calling(a, b, c, d, e, f);
 
     input a, b, c, d, e ;
