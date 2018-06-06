@@ -54,7 +54,7 @@ Two complement
 
 The way we do arithmetic operations in a paper, adding transport numbers and deciding which number is greater to change the signal and perform a subtraction, is difficult to implement in a digital system. To overcome that there is another way to represent finite binary numbers and it’s called two complement. It is easier to perform calculations of sum and subtraction using two complement representation.
 
-First we define with how many bits we are working. After that we perform an operation to find the two complement of a negative number. If you have to do the complement of a number x of n bits, the operation is this, y\ :sub:`10`\ = ( :math:`2^n` - x)\ :sub:`10`\. For example we are working with 3 bits and we want to know the two complement of -010\ :sub:`2`\, doing the operation,
+First we define with how many bits we are working. After that we perform an operation to find the two complement of a negative number. If you have to do the complement of a number x of n bits, the operation is this, y\ :sub:`2`\ = ( :math:`2^n` - x)\ :sub:`2`\. For example we are working with 3 bits and we want to know the two complement of -010\ :sub:`2`\, doing the operation,
 
 y\ :sub:`2`\  = 1000\ :sub:`2`\  – 010\ :sub:`2`\  = 110\ :sub:`2`\ , and this is -010\ :sub:`2`\  represented in two complement.
 
