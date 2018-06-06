@@ -9,7 +9,7 @@ Boolean algebra
 Boolean functions
 =================
 
-A Boolean function is a function that has n variables or entries, so it has 2n possible combinations of the variables. These functions will assume only 0 or 1 in its output. An example of a Boolean function is this, f(a,b,c) = a X b + c. These functions are implemented with the logic gates.
+A Boolean function is a function that has n variables or entries, so it has :math:`2^n` possible combinations of the variables. These functions will assume only 0 or 1 in its output. An example of a Boolean function is this, f(a,b,c) = a X b + c. These functions are implemented with the logic gates.
 
 Digital circuit of f(a,b,c)
 
@@ -44,7 +44,7 @@ a	b	c	f(a,b,c)
 ===    ===     ===      ========
 
 
-There is a way to implement functions in a canonical form, the minimal form of a function. For example if we had to implement a function with the truth table of the function f. First we would form the terms where the function has value 1, with only one possible combination for every term. The term would be 1 for one combination of the entry and 0 to the others. To do that we would use an AND gate and make that combination with all inputs equal 1 in the AND gate. The function then would be a sum of all terms. So the terms of the truth table would be,
+There is a way to implement functions in a canonical form, the minimal form of a function. For example if we had to implement a function with the truth table of the function f. First we would form the terms where the function has value 1, with only one possible combination for every term. The term would be 1 for one combination of the entry and 0 to the others. To do that we would use an AND gate and make that combination with all inputs equal 1 in the AND gate. The function then would be a sum of all terms. So the terms of the truth table would be:
 
 Terms of the ∑
 
