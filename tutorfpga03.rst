@@ -71,7 +71,7 @@ Special number characters
 Character Function                      Example
 _         used for readability          16'h15_ab_cd_ef
 x or X    specify unknown bits          16'h15abx
-z or z    specify high impedance value  16'hz
+z or Z    specify high impedance value  16'hz
 ========= ============================  ===============
 
 
