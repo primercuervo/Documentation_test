@@ -51,6 +51,7 @@ Karnaugh map
 |
 
 Grouping the terms in red give: !a X b + a X b = b
+
 Grouping the terms in green give: a X !b + a X b = a
 
 The result is f = a + b .
