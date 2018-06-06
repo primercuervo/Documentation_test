@@ -7,8 +7,8 @@ Introduction
 ************
 
 This will be a series of general topics about the concepts of digital systems and programmable logic. A digital system 
-is a system formed by logic gates, which transforms logic input into a logic output with a logic function. Memories, processors, cellphones and all kind of electronics have digital circuits. The logic gates that are the building blocks 
-of a digital system can be implemented with analog circuits and digital circuits, but with the advance of the semiconductor technology there are much more electronic circuits. These circuits are formed with transistors, MOSFETs, and passive 
+is a system made up by logic gates, which transforms logic input into a logic output with a logic function. Memories, processors, cellphones and all kind of electronics have digital circuits, logic gates are the building blocks 
+of a digital system. They can be implemented with analog circuits and digital circuits, but with the advance of the semiconductor technology there are much more electronic circuits. These circuits are made up by transistors, MOSFETs, and passive 
 components like resistors, capacitors and inductors. 
 
 An ASIC (Application Specific Integrated Circuits) is digital circuit that is on the vast majority of the 
