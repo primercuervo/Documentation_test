@@ -5,14 +5,14 @@ Verilog - Operators
 Arithmetic operators
 ====================
 
-For the FPGA, division and multiplication are very expensive and sometimes you cannot synthesize division. If you use Z or X for values the result is unknown. The operations treat the values as unsigned. If a = 5, b=10, c=2b'01 and d = 2'b0Z . 
+For the FPGA, division and multiplication are very expensive and sometimes you cannot synthesize division. If you use Z or X for values the result is unknown. The operations treat the values as unsigned. If a = 5, b=10, c=2'b01 and d = 2'b0Z . 
 
 ========= ============================  ==================
 Character Operation performed           Example
 \+        Add                           b + c = 11
 \-        Subtract                      b - c = 9, -b=-10
-\/        Divide                        a * b = 50
-\*        Multiply                      b / a = 2
+\/        Divide                        a / b = 50
+\*        Multiply                      b * a = 2
 %         Modulus                       b % a = 0
 ========= ============================  ==================
 
@@ -37,7 +37,7 @@ These operators reduces the vectors to only one bit. If there are the characters
 
 ========= ============================  ====================
 Character Operation performed           Example
-\&        And all bits                  &a = 1'b0, &d1'b0
+\&        And all bits                  &a = 1'b0, &d = 1'b0
 \~&       Nand all bits                 ~&a = 1'b1
 \|        Or all bits                   |a = 1'b1, |c = 1'bX
 \~|       Nor all bits                  ~|a= 1'b0
@@ -69,7 +69,7 @@ These operators compare operands and results a 1 bit scalar boolean value. If a 
 
 ========= ============================= ====================
 Character Operation performed           Example
-\!        Not true                      !a = 1'b0
+\!        Not true                      !(a && b) = 1'b1
 \&&       Both expressions true         a && b = 1'b0
 \||       One ore both expressions true a || b = 1'b1
 ========= ============================= ====================
