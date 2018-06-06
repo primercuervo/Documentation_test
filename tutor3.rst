@@ -10,9 +10,10 @@ Operations with binary base are equal the decimal base. The difference is when w
 
 Sum
 ===
+
 104\ :sub:`10`\ + 2\ :sub:`10`\ = 0110 1000\ :sub:`2`\ + 0000 0010\ :sub:`2`\ = 0110 1010\ :sub:`2`\ = 106\ :sub:`10`\  
 
-As the result isn’t greater than 0111 11112 , for this operation didn’t occurred overflow.
+As the result isn’t greater than 0111 1111\ :sub:`2`\ , for this operation didn’t occurred overflow.
 
 104\ :sub:`10`\ + 24\ :sub:`10`\ = 0110 1000\ :sub:`2`\ + 0001 1000\ :sub:`2`\ =  1000 0000\ :sub:`2`\ = 0\ :sub:`10`\  
 
@@ -35,7 +36,10 @@ Multiplication
 ==============
 
 2\ :sub:`10`\ * 60\ :sub:`10`\ = 0000 0010\ :sub:`2`\ * 0011 1100\ :sub:`2`\ = 0111 1000\ :sub:`2`\ = 120\ :sub:`10`\
+
 -2\ :sub:`10`\ * 60\ :sub:`10`\ = -0000 0010\ :sub:`2`\ * 0011 1100\ :sub:`2`\ = -0111 1000\ :sub:`2`\ = 1111 1000\ :sub:`2`\ = - 120\ :sub:`10`\
+
+In none of the cases occurred overflow.
 
 Division
 ========
