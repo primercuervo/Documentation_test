@@ -9,13 +9,12 @@ Digital Information and Numerical Bases
 Digital Information
 ===================
 
-The information is represented by numbers written in a digital way. Why digital? When you have finite components to store information, it must be written digitally, that is what your calculator does. It always store a finite amount of numbers, so for infinite numbers like 5.444… and if your calculator has 3 significant digits it rounds to 5.44. Otherwise if you represent a number infinitely it is called to represented analogically, and that is the case of the infinity number 5.444… .
-
+The information is represented by numbers written in a digital way. Why digital? When you have finite components to store information, it must be written digitally, that is what your calculator does. It always store a finite amount of numbers, so for infinite numbers like 5.444… and if your calculator has 3 significant digits it rounds to 5.44. Otherwise if you represent a number infinitely it is represented analogically, and that is the case of the infinity number 5.444… .
 
 Representation of numbers
 =========================
 
-We commonly store the numbers in a decimal base, because of our ten fingers. But the numbers can be represented in other bases like binary, octal and hexadecimal. These bases are multiple of two and have many advantages to be used. Our computers, processors and digital systems stores the numbers in a binary base. In a digital system the bases are represented by voltage levels, like 0, 3.3V, 5V. First let’s start with a decimal base. The algorism that has more value, the one that is written in the left are said as most significant algorism. The one of less value that is written in the right is the less significant algorism. In the binary base these names are called very often and the most significant algorism is the most significant bit (MSB) and the less significant algorism is the less significant bit (LSB).
+We commonly store the numbers in a decimal base, because of our ten fingers. But the numbers can be represented in other bases like binary, octal and hexadecimal. These bases are multiple of two and have many advantages to be used. Our computers, processors and digital systems stores the numbers in a binary base. In a digital system the bases are represented by voltage levels, like 0, 3.3V, 5V. The algorism that has more value, the one that is written in the left is said as the most significant algorism. The one of less value that is written in the right is the less significant algorism. In the binary base these names are called often and the most significant algorism is the most significant bit (MSB) and the less significant algorism is the less significant bit (LSB). First let’s start with the decimal base.
 
 Decimal base
 ------------
