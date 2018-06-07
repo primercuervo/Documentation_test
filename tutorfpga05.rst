@@ -23,7 +23,7 @@ When the right-hand side (RHS) changes the left-hand side updates immediately. R
 Procedural Statements
 =====================
 
-There are two types of procedural statements, the **always** block and the **initial** block. In Verilog there may be several **always** blocks and they executed in parallel. The **initial** block is used for simulation, it can't be synthesized and it executes only once in the start of the simulation. 
+There are two types of procedural statements, the **always** block and the **initial** block. In Verilog there may be several **always** blocks and they are executed in parallel. The **initial** block is used for simulation, it can't be synthesized and it executes only once in the start a simulation. 
 
 The **always** block executes when its pre-defined funtions, or its inputs changes. The pre-defined functions are **posedge** and **negedge**, and they are used with clock variables to detect when it rises to 1 or decays to 0. Example:
 
@@ -45,7 +45,7 @@ The **always** block executes when its pre-defined funtions, or its inputs chang
 Blocking vs Non-blocking Assignments
 ====================================
 
-If the assignments inside an **always** or **initial** block are made with the (=) symbol they are executed sequentially. If they are made with the (<=) they are executed in parallel. They are used to update **reg**, **integer**, **real**, **time** and **realtime** values. Examples:
+If the assignments inside an **always** or **initial** block are made with the (=) symbol they are executed sequentially. If they are made with the (<=) they are executed in parallel. They are used to update **reg**, **integer**, **real**, **time** and **realtime** values. The **real**, **time** and **realtime** values are used in simulation and are not synthesizable. Examples:
 
 Blocking
 --------
