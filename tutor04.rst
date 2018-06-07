@@ -2,10 +2,6 @@
 Basics of Digital Systems - Boolean algebra
 ###########################################
 
-***************
-Boolean algebra
-***************
-
 It is a branch of algebra where the values of the variables are 0 and 1, or false and true respectively. There are only three operations, the logical conjunction denoted as ∧ or X, logical disjunction denoted as ∨ or + and logical negation denoted as ¬ or !. In this text we will use X, + and ! respectively as the logic gates and, or and negation. 
 
 Axioms of Boolean algebra
