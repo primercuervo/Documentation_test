@@ -83,8 +83,11 @@ a  b  c  !f(a,b,c)	Terms     f(a,b,c) Terms of the ∏
 .. math::
 
     !f (a,b,c) = !a X !b X !c + !a X b X !c + a X !b X !c
-    !!f = f &= !( !a X !b X !c + !a X b X !c + a X !b X !c) = !( !a X !b X !c) X !( !a X b X !c) X !( a X !b X !c)
-            &= (a + b + c ) X (a X !b X c) X (!a X b X c)
+
+.. math::
+
+    !!f = f &= !( !a X !b X !c + !a X b X !c + a X !b X !c) = !( !a X !b X !c) X !( !a X b X !c) X !( a X !b X !c) \\
+            &= (a + b + c ) X (a X !b X c) X (!a X b X c) \\
 
 Operating the terms we get the basic form that is f = a X b + c. 
 
