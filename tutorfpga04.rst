@@ -11,8 +11,8 @@ For the FPGA, division and multiplication are very expensive and sometimes you c
 Character Operation performed           Example
 \+        Add                           b + c = 11
 \-        Subtract                      b - c = 9, -b=-10
-\/        Divide                        a / b = 50
-\*        Multiply                      b * a = 2
+\/        Divide                        b / a = 2
+\*        Multiply                      a * b = 50
 %         Modulus                       b % a = 0
 ========= ============================  ==================
 
@@ -48,7 +48,7 @@ Character Operation performed           Example
 Relational operators
 ====================
 
-These operators compare operands and results a 1 bit scalar boolean value. If a = 3'b010, b = 3'b100, c = 3'b111, d = 3'b01z and e = 3'b01X .
+These operators compare operands and results a 1 bit scalar boolean value. The case equality and inequality operators can be used for unknown or high impedance values (z or x) and if the two operands are unknown the result is a 1. If a = 3'b010, b = 3'b100, c = 3'b111, d = 3'b01z and e = 3'b01X .
 
 ========= ============================  ====================
 Character Operation performed           Example
