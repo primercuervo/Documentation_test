@@ -1,4 +1,4 @@
-#######################
+﻿#######################
 Red Pitaya - Learn FPGA
 #######################
 
@@ -17,12 +17,13 @@ such as radar, radio systems, vector-network-analyzer, etc
     :maxdepth: 1                                                                                                                      
     :numbered: 
 
-    tutor1.rst
-    tutor2.rst
-    tutor3.rst
-    tutor4.rst
-    tutor5.rst
-    tutor6.rst   
+    tutor01.rst
+    tutor02.rst
+    tutor03.rst
+    tutor04.rst
+    tutor05.rst
+    tutor06.rst   
+    tutor07.rst   
     tutorfpga01.rst
     tutorfpga02.rst
     tutorfpga03.rst
@@ -37,12 +38,13 @@ such as radar, radio systems, vector-network-analyzer, etc
     advanced.rst
 
     
-..  tutor1.rst
-    tutor2.rst
-    tutor3.rst
-    tutor4.rst
-    tutor5.rst
-    tutor6.rst
+..  tutor01.rst
+    tutor02.rst
+    tutor03.rst
+    tutor04.rst
+    tutor05.rst
+    tutor06.rst
+    tutor07.rst   
     tutorfpga01.rst
     tutorfpga02.rst
     tutorfpga03.rst
