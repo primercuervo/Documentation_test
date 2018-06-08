@@ -50,11 +50,11 @@ Functions
 
 Functions are like tasks, with some differences. Functions cannot drive more than one output and cannot have time delays. Some differences are:
 
-- Functions cannot include timing delays, like posedge, negedge, # delay, which means that functions should be executed in "zero" time delay.
+- Functions cannot include timing delays, like posedge, negedge, simulation delay, which means that functions implement combitional logic.
 - Functions can have any number of inputs but only one output.
 - The variables declared within the function are local to that function.
-- The order of declaration within the function defines how the variables passed to the function by the caller are used. 
-- Functions can take, drive, and source global variables, when no local variables are used. When local variables are used, basically output is assigned only at the end of function execution.
+- The order of declaration within the function are considered and have to be the same as the caller.
+- Functions can use and modify global variables, when no local variables are used.
 - Functions can call other functions, but cannot call tasks. Function example:
 
 .. code-block:: Verilog
