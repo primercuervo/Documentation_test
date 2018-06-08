@@ -119,7 +119,7 @@ The order of the table tells what operation is made first, the first ones has th
 +---------------------+
 | ^, ^~ or ~^         |
 +---------------------+
-| |                   |
+| \|                  |
 +---------------------+
 | &&                  |
 +---------------------+
