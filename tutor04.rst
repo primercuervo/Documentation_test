@@ -1,10 +1,10 @@
 ﻿###########################################
-Basics of Digital Systems - Boolean algebra
+Basics of Digital Systems - Boolean Algebra
 ###########################################
 
 It is a branch of algebra where the values of the variables are 0 and 1, or false and true respectively. There are only three operations, the logical conjunction denoted as ∧ or X, logical disjunction denoted as ∨ or + and logical negation denoted as ¬ or !. In this text we will use X, + and ! respectively as the logic gates and, or and negation. 
 
-Axioms of Boolean algebra
+Axioms of Boolean Algebra
 =========================
 
 From Wikipedia, *an axiom is a sentence or proposition that is not proven or demonstrated and is considered as obvious or as an initial consensus necessary for the construction or acceptance of a theory. For this reason, it is accepted as truth and serves as the starting point for deduction and inferences from other truths.* In Boolean algebra there are ten axioms and are described as follows. In these axioms “a” is a Boolean variable that can only assume 0 or 1.
@@ -17,14 +17,14 @@ A4: 1 X 1 = 1                                A9: 1 + 1 = 1
 A5: 0 X 1 = 1 X 0 = 0                        A10: 0 + 1 = 1 + 0 = 1
 ========================                    =====================  
 
-Basic operations and Logic gates
+Basic Operations and Logic Gates
 ================================ 
 
 These axioms are the principles of the operations. We will see the three basic operations that are the AND, OR and NOT operations. For that we will use two Boolean variables a and b that can assume 0 and 1, or false and true.
 
 For the construction of digital systems we use logic gates. There are three basic logic gates and others are formed with a combination of them. These gates can be realized in the real world with electronic circuits with transistors or FET’s.
 
-AND operation
+AND Operation
 -------------
 
 c = a AND b = a X b, 
@@ -53,7 +53,7 @@ AND Gate
 |
 |
 
-OR operation
+OR Operation
 ------------
 
 c = a OR b = a + b, 
@@ -82,7 +82,7 @@ OR Gate
 |
 |
 
-NOT operation
+NOT Operation
 -------------
 
 c = NOT a = !a, 
@@ -108,7 +108,7 @@ NOT Gate
 |
 |
 
-Laws of Boolean algebra
+Laws of Boolean Algebra
 =======================
 
 The next laws offers tools to work with Boolean algebra, and many are seen in the normal algebra. These laws can simplify problems, digital circuits only doing the algebraic operations. This list of laws defines the Boolean algebra. They are described with the variables a, b and c and the Boolean operations.

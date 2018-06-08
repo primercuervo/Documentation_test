@@ -1,12 +1,12 @@
 ﻿########################################
-Basics of Digital Systems - Karnaugh map
+Basics of Digital Systems - Karnaugh Map
 ########################################
 
 This is a graphical method to simplify Boolean functions. It consists in grouping the terms of a truth table and to simplify it to use the fewer terms as possible. Let’s start with the OR function.
 
 f(a,b) = a + b 
 
-Truth table
+Truth Table
 
 ===     ===     ==========
 a	b	f = a OR b
@@ -29,7 +29,7 @@ f = (!a X b) + (a X !b) + (a X b) + (a X b)
 
 The Karnaugh map is formed with the terms of the truth table:
 
-Karnaugh map
+Karnaugh Map
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughOR.png
     :height: 200px
@@ -54,7 +54,7 @@ The result is f = a + b .
 
 The terms must be grouped in multiples of power of two (2,4,8,16,...) and the objective is the simplification of the function. The bigger the group better is the simplification. All ones should be in one group and it is better to not repeat terms. If it is possible to make a group, the simplification will be better. Let’s do the example of the function f(a,b,c) = (a X b) + c
 
-Truth table of the function
+Truth Table of the Function
 
 ===     ===     ===     ========
 a	b	c	f(a,b,c)
@@ -69,7 +69,7 @@ a	b	c	f(a,b,c)
 1	1	1	1
 ===     ===     ===     ========
 
-Karnaugh map
+Karnaugh Map
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughfunction.png
     :height: 200px
@@ -117,7 +117,7 @@ a	b	c	d	f(a,b,c,d)
 1	1	1	1	1
 ===     ===     ===     ===     ==========
 
-Karnaugh map
+Karnaugh Map
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/karnaughfunction4var.png
     :height: 300px

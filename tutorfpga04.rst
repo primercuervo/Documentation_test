@@ -2,7 +2,7 @@
 Verilog - Operators
 ###################
 
-Arithmetic operators
+Arithmetic Operators
 ====================
 
 For the FPGA, division and multiplication are very expensive and sometimes you cannot synthesize division. If you use Z or X for values the result is unknown. The operations treat the values as unsigned. If a = 5, b=10, c=2'b01 and d = 2'b0Z . 
@@ -16,7 +16,7 @@ Character Operation performed           Example
 %         Modulus                       b % a = 0
 ========= ============================  ==================
 
-Bitwise operators
+Bitwise Operators
 =================
 
 Each bit is operated, result is the size of the largest operand and  the smaller operand is left extended with zeroes to the size of the bigger operand. If a = 3'b101, b=3'b110 and c=3'b01X .
@@ -30,7 +30,7 @@ Character Operation performed           Example
 \^~ or ~^ Xnor each bit                 a ^~ b = 3'b100
 ========= ============================  ==================
 
-Reduction operators
+Reduction Operators
 ===================
 
 These operators reduces the vectors to only one bit. If there are the characters z and x the result can be a known value. If a = 5'b10101, b = 4'b0011, c = 3'bz00 and d = 3'bx011 .
@@ -45,7 +45,7 @@ Character Operation performed           Example
 \^~ or ~^ Xnor all bits                 ~^a = 1'b0
 ========= ============================  ====================
 
-Relational operators
+Relational Operators
 ====================
 
 These operators compare operands and results a 1 bit scalar boolean value. The case equality and inequality operators can be used for unknown or high impedance values (z or x) and if the two operands are unknown the result is a 1. If a = 3'b010, b = 3'b100, c = 3'b111, d = 3'b01z and e = 3'b01X .
@@ -62,7 +62,7 @@ Character Operation performed           Example
 \!===     Case inequality               a !== d = 1'b1
 ========= ============================  ====================
 
-Logical operators
+Logical Operators
 =================
 
 These operators compare operands and results a 1 bit scalar boolean value. If a = 3'b010 and b = 3'b000.
@@ -74,7 +74,7 @@ Character Operation performed           Example
 \||       One ore both expressions true a || b = 1'b1
 ========= ============================= ====================
 
-Shift operators
+Shift Operators
 ===============
 
 These operators shift operands to the right or left, the size is kept constant, shifted bits are lost and the vector is filled with zeroes. If a = 4'b1010 and b = 4'b10X0.
@@ -85,7 +85,7 @@ Character  Operation performed           Example
 \<<        Shift left                    a << 2 results 4'b1000
 =========  ============================= ======================
 
-Other operators
+Other Operators
 ===============
 
 These are operators used for condition testing and to create  vectors. If a = 4'b1010 and b = 4'b10X0.
@@ -97,7 +97,7 @@ Character  Operation performed           Example
 {{}}       Replicate                     {3{2'b10}}= 6'b101010
 =========  ============================= ======================
 
-Operators precedence
+Operators Precedence
 ====================
 
 The order of the table tells what operation is made first, the first ones has the highest priority. The () can be used to override default.

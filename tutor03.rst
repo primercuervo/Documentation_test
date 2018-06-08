@@ -1,6 +1,6 @@
-﻿#######################################################################
-Basics of Digital Systems - Mathematical operations with the binary base
-#######################################################################
+﻿########################################################################
+Basics of Digital Systems - Mathematical Operations with the Binary Base
+########################################################################
 
 
 Operations with binary base are equal the decimal base. The difference is when we need to store numbers in a finite amount of bits. Let’s do some operations with 8 bits, where the MSB is the signal bit and the others 7 bits are the bits of numerical value.
@@ -45,9 +45,8 @@ Division
 
 If the division results in a decimal number, the decimal places are discarded.
 
-**************
-Two complement
-**************
+Two Complement
+==============
 
 The way we do arithmetic operations in a paper, adding transport numbers and deciding which number is greater to change the signal and perform a subtraction, is difficult to implement in a digital system. To overcome that there is another way to represent finite binary numbers and it’s called two complement. It is easier to perform calculations of sum and subtraction using two complement representation.
 

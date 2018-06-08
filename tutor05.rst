@@ -1,10 +1,10 @@
 ﻿#######################################
-Basics of Digital Systems - Other gates
+Basics of Digital Systems - Other Gates
 #######################################
 
 There are other logic gates that are made from the 3 basic gates. Their functions are commonly used and that is why they are represented as gates.
 
-NAND gate
+NAND Gate
 =========
 
 It is the negated function of the AND gate.
@@ -20,7 +20,7 @@ a	b	c = a NAND b
 1	1	0
 ===    ===     =============
 
-NAND gate
+NAND Gate
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/2000px-Nand-gate-en.png
     :height: 100px
@@ -33,7 +33,7 @@ NAND gate
 |
 |
 
-NOR gate
+NOR Gate
 ========
 
 It is the negated function of the OR gate.
@@ -49,7 +49,7 @@ a	b	c = a NOR b
 1	1	0
 ===    ===     ============
 
-NOR gate
+NOR Gate
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/1200px-NOR_ANSI_Labelled.svg.png
     :height: 100px
@@ -62,7 +62,7 @@ NOR gate
 |
 |
 
-XOR gate
+XOR Gate
 ========
 
 If a and b are different the result is 1, otherwise 0.
@@ -76,7 +76,7 @@ a	b	c = a XOR b
 1	1	0
 ===    ===     ============
 
-XOR gate
+XOR Gate
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/Xor-gate-en.svg.png
     :height: 100px
@@ -89,7 +89,7 @@ XOR gate
 |
 |
 
-XNOR gate
+XNOR Gate
 =========
 
 If a and b are different the result is 0, otherwise 1.
@@ -103,7 +103,7 @@ a	b      c = a XNOR b
 1	1	1
 ===    ===     ============
 
-XNOR gate
+XNOR Gate
 
 .. image:: https://raw.githubusercontent.com/victorhkr/Documentation_test/master/2000px-Xnor-gate-en.svg.png
     :height: 100px

@@ -29,12 +29,12 @@ Reg
 
 Reg declarations can be **reg** , **integer**, **time** and **realtime**. A variable of type reg can be designated only by a procedure statement, task, or function. A variable of type reg cannot be the output of a port or an **assign** statement.
 
-Data input output rules
+Data Input Output Rules
 =======================
 
 If you have a variable of type net, it can be declared as **input**, **output**, or **inout**. A variable of type **reg** can only be declared of type **output**.
 
-Assign values
+Assign Values
 =============
 
 In Verilog numbers can be assigned with size or not. If it is not declared the size it defaults to 32 bits. Also you must choose the base of the number and the options are decimal, hexadecimal, octal and binary. If not specified the base it defaults to the decimal base.
@@ -64,7 +64,7 @@ Example:
 
 10'd-5 Illegal representation.
 
-Special number characters 
+Special Number Characters 
 =========================
 
 ========= ============================  ===============
